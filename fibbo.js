@@ -1,14 +1,11 @@
-function fibo(i) {
-	if (i == -1) {
+function fibo(index) {
+	if (index == -1) {
 		return (0)
 	}
-	else if (i == 0) {
+	else if (index == 0) {
 		return (1)
 	}
 	else {
-		return (fibo(i - 2) + fibo(i - 1))
+		return (fibo(index - 2) + fibo(index - 1))
 	}
 }
-
-for (let a = 0; a < 20; a++)
-console.log(fibo(a));
